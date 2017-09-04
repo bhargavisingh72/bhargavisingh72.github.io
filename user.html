@@ -1,0 +1,73 @@
+<html>
+<style>
+input[type=text], input[type=password],input[type=role] {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+input[type=button] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+
+</style>
+<head>
+<title> </title>
+</head>
+
+<body>
+<h1>Register</h1>
+<form action="/user" method="post">
+<div>
+
+<label><b>Name</b></label>
+<input type="text" name="Name" placeholder="enter the name" required>
+</div>
+
+
+<div>
+<label><b>UserName</b></label>
+
+<input type="text" name="UserName" placeholder="enter the username" required>
+</div>
+
+<div>
+<label><b>Password</b></label>
+<input type="password" name="password" placeholder="enter the password" required>
+</div>
+
+<div>
+<label><b>MobileNo</b></label>
+<input type="text" name="mobileno"  placeholder="enter the mobileno" required>
+</div>
+
+<div>
+<label><b>EmailId</b></label>
+<input type="text" name="emailid" placeholder="enter the emailid" required>
+</div>
+
+<div>
+<label><b>Role</b></label>
+<select name="Role">
+<option value="user">USER</option>
+<option value="admin">ADMIN</option>
+<option value="author">AUTHOR</option>
+</select>
+</div>
+<div >
+<input type="button" value="Register" >
+</div>
+
+</body>
+</html>
+	
